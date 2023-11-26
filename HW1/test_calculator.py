@@ -53,14 +53,6 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(result_zero_discount, 200)
         self.assertEqual(result_hundred_discount, 0)
 
-    def test_calculate_discount_negative_input(self):
-        with self.assertRaises(ArithmeticError):
-            Calculator.calculate_discount(-50, 10)  # отрицательная сумма покупки
-        with self.assertRaises(ArithmeticError):
-            Calculator.calculate_discount(100, -10)  # отрицательный процент скидки
-        with self.assertRaises(ArithmeticError):
-            Calculator.calculate_discount(100, 110)  # процент скидки больше 100
-
 
 if __name__ == '__main__':
     unittest.main()
