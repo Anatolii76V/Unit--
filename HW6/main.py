@@ -38,4 +38,4 @@ def test_list_comparator(list1, list2, expected_result):
 
 # Проверка покрытия кода тестами
 # Запуск тестов с покрытием:
-# pytest --cov=your_script_name.py
+
